@@ -20,12 +20,12 @@ public class User {
     @ColumnInfo
     private String phoneNumber;
 
-    public long getId() {
+    public long getUserId() {
         return userId;
     }
 
-    public void setId(long id) {
-        this.userId = id;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getFirstName() {

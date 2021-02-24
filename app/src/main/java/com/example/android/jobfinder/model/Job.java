@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Job {
+
     @PrimaryKey(autoGenerate = true)
     private long jobId;
 
@@ -27,13 +28,14 @@ public class Job {
     @ColumnInfo
     private String location;
 
-    public long getId() {
+    public long getJobId() {
         return jobId;
     }
 
-    public void setId(long id) {
-        this.jobId = id;
+    public void setJobId(long jobId) {
+        this.jobId = jobId;
     }
+
 
     public float getMaxSalary() {
         return maxSalary;
