@@ -1,7 +1,5 @@
-package com.example.android.jobfinder.User;
+package com.example.android.jobfinder.model;
 
-
-import java.util.List;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

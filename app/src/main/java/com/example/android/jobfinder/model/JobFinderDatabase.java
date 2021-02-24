@@ -1,12 +1,13 @@
-package com.example.android.jobfinder.User;
+package com.example.android.jobfinder.model;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {User.class , Job.class}, version = 1)
+@Database(entities = {User.class , Job.class, UserWithJobs.class}, version = 1)
 public abstract class JobFinderDatabase extends RoomDatabase {
 
         public abstract UserDao userDao();
         public abstract JobDao jobDao();
+        public abstract UserWithJobs userWithJobs();
     }
 

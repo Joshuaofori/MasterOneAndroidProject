@@ -1,4 +1,4 @@
-package com.example.android.jobfinder.User;
+package com.example.android.jobfinder.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class User {
 
     @PrimaryKey(autoGenerate = true)
-    private long id;
+    private long userId;
     @ColumnInfo
     private String firstName;
 
@@ -21,11 +21,11 @@ public class User {
     private String phoneNumber;
 
     public long getId() {
-        return id;
+        return userId;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.userId = id;
     }
 
     public String getFirstName() {

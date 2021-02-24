@@ -1,4 +1,4 @@
-package com.example.android.jobfinder.User;
+package com.example.android.jobfinder.model;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

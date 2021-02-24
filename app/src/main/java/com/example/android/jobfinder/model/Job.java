@@ -1,6 +1,4 @@
-package com.example.android.jobfinder.User;
-
-import android.location.Location;
+package com.example.android.jobfinder.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -9,7 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Job {
     @PrimaryKey(autoGenerate = true)
-    private long id;
+    private long jobId;
 
     @ColumnInfo
     private float maxSalary;
@@ -30,11 +28,11 @@ public class Job {
     private String location;
 
     public long getId() {
-        return id;
+        return jobId;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.jobId = id;
     }
 
     public float getMaxSalary() {
